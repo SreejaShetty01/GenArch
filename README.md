@@ -15,6 +15,7 @@ GenArch was developed to solve a common software engineering bottleneck:
 > Maintaining up-to-date system documentation manually is time-consuming, and standard generative AI text-to-graphics implementations suffer from layout drift—where unconstrained parsing outputs sprawling node matrices that break canvas bounds and corrupt rendering syntax.
 
 This project resolves this friction by combining:
+
 - Contextual prompt framing
 - Deterministic token-stream validation
 - Server-side viewport enforcements
@@ -42,9 +43,9 @@ The system intercepts messy raw strings, injects precise geometric boundaries in
 
 - **Multi-Topology Synthesis:** Generates everything from object-oriented UML class structures to system sequence maps dynamically.
 - **Deterministic Viewport Control:** Custom prompt constraints explicitly eliminate canvas overflow, horizontal drift, and syntax breaks.
-- **Isolating Canvas Rendering:** Decouples core web application styles from generated vector buffers to export pristine visual documentation blocks.
+- **Structured AI Inference Layer:** Engineered prompt schemas guide the language model to produce strict, schema-compliant diagram syntax rather than free-form generative output.
 - **State Handling & Workspace Management:** Natively tracks isolated user profiles and execution histories using a secure web session layer.
-- **Engine Optimization Engine:** Sanitizes the response stream to strip away conversational prefixes and isolate pure, valid structural syntax.
+- **Token Sanitization Engine:** Sanitizes the response stream to strip away conversational prefixes and isolate pure, valid structural syntax.
 - **Django-Powered Backend:** Built on a production-ready web application node for low latency and smooth request lifecycle management.
 
 ---
@@ -60,7 +61,7 @@ The system intercepts messy raw strings, injects precise geometric boundaries in
 ### System Process
 1. Captures the raw system statement via the unified dashboard interface.
 2. Programmatically appends rigid grid boundaries, structural schemas, and termination rules inside the orchestration views layer.
-3. Dispatches the optimized payload to the underlying token parsing layer.
+3. Dispatches the optimized prompt payload to the language model inference layer.
 4. Catches, sanitizes, and filters the returned token stream to guarantee valid syntax execution.
 5. Directs the clean execution blocks to the server-side compilation engine to render an isolated, high-resolution graphic asset.
 
@@ -69,14 +70,16 @@ The system intercepts messy raw strings, injects precise geometric boundaries in
 # Data & Parsing Approach
 
 The project leverages:
+
 - Advanced contextual schema design for deterministic pipeline outputs.
-- Rigorous token filtering algorithms to isolate structural data from text models.
-- String serialization pipelines to strip conversational text mutations and vulnerabilities.
+- Rigorous token filtering algorithms to isolate structural data from the model's response stream.
+- String serialization pipelines to strip conversational text mutations and extract clean diagram syntax.
 
 The core execution pipeline guarantees:
+
 - Token-stream structural validation.
 - Precise layout rendering and arrow-direction parsing.
-- Scalable, zero-drag visual document synthesis.
+- Scalable, zero-drift visual document synthesis.
 
 ---
 
@@ -88,12 +91,15 @@ The core execution pipeline guarantees:
 ## Backend Web Architecture
 - Django Framework
 
+## AI Inference Layer
+- Gemini API (Prompt engineering + structured diagram syntax generation)
+
 ## API & Query Layer
 - GraphQL (Structured system interaction and data schema processing)
 
 ## Image & Layout Compilation
-- Pillow Canvas Engine
-- Standalone Server-Side Layout Compiler
+- Server-Side Layout Compiler
+- Pillow (Image processing and asset export)
 
 ## Frontend Interface Layer
 - HTML5, CSS3, Django Templates
@@ -106,3 +112,10 @@ The core execution pipeline guarantees:
 An example of an isolated, vertically constrained, high-readability UML class diagram output compiled seamlessly through the optimized prompt pipeline.
 
 <img width="100%" alt="Generated Production UML Asset" src="media/output image.png">
+
+---
+
+## Author
+
+**Sreeja Shetty**  
+[LinkedIn](https://www.linkedin.com/in/sreeja-shetty-1b3711301) · [Email](mailto:sreejashetty01@gmail.com) · [GitHub](https://github.com/SreejaShetty01)
