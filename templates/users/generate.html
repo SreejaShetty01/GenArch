@@ -1,0 +1,35 @@
+{% extends 'users/Userbase.html' %}
+
+{% block content %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>PlantUML Diagram Generator</title>
+</head>
+<body>
+    <h2>Gemini + PlantUML Diagram Generator</h2>
+
+    <form method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        <label>Enter your description:</label><br>
+        <textarea name="query" rows="5" cols="60" required></textarea><br><br>
+
+        <label>Upload code file (optional):</label><br>
+        <input type="file" name="code_file"><br><br>
+
+        <button type="submit">Generate Diagram</button>
+    </form>
+
+    {% if ai_response %}
+        <p style="color: red;"><strong>{{ ai_response }}</strong></p>
+    {% endif %}
+
+    {% if diagram_url %}
+        <h3>Generated Diagram:</h3>
+        <img src="{{ diagram_url }}" alt="Diagram" style="border:1px solid #ccc; padding:10px;">
+    {% endif %}
+</body>
+</html>
+
+
+{% endblock %}
