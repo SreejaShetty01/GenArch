@@ -1,4 +1,4 @@
-# GenArch — AI-Powered Deterministic Text-to-Architecture Generation Pipeline
+# GenArch — A Generative AI Pipeline for Automated System Design
 
 GenArch is an intelligent architecture synthesis and visualization system built using Python and structural constraint mapping.
 
